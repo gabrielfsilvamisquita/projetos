@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <title>Minha IDE</title>
+</head>
+<body>
+    <div id="left">
+        <div class="organizar">
+            <input placeholder="Nome..." id="nome" type="text"> <!--Nome do Site-->
+        </div>
+        <div class="organizar">
+            <textarea spellcheck="false" id="code">
+<style>
+    .body{
+        background-color: transparent;
+    }
+</style>
+
+<body>
+
+</body>
+            </textarea> <!--Código-->
+        </div>
+        <div class="organizar">
+            <select id="font"> <!--Alterar Fonte-->
+                <option value="sans-serif">Sans-serif</option>
+                <option value="serif">Serif</option>
+                <option value="hand-writing">Hand-writing</option>
+            </select>
+            <button id="clean"> <!--Limpar Código-->
+                <span class="fa fa-trash"></span>
+            </button>
+        </div>
+    </div>
+
+    <div id="right"> 
+        <div class="body" id="website"> <!--Mostrar o Site-->
+            
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

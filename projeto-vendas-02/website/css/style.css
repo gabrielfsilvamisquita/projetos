@@ -1,0 +1,74 @@
+:root{
+    --cor01:#4A678F;
+    --cor02:#d4e5fd;
+    --cor03:#88AADB;
+    --cor04:#8F733C;
+    --cor05:#DBBF88;
+}
+
+body{ /*Corpo*/
+    margin: 0;
+    background: var(--cor02);
+}
+header{ /*Cabeçalho*/
+    background: linear-gradient(to right, var(--cor05), var(--cor01));
+    box-shadow:  0px 0px 8px #00000067;
+    padding: 5px;
+    height: 30px;
+    margin-bottom: 25px;
+}
+button{ /*Botões*/
+    background-color: transparent;
+    border: none;
+}
+
+/*Configurando botão home no cabeçalho*/
+#logo-home{
+    height: 100%;
+    max-width: 30px;
+    float: left;
+}
+#logo-home button{
+    transition-duration: .3s;
+    width: 40px;
+    height: 100%;
+    color: var(--cor01);
+}
+#logo-home button:hover{
+    transition-duration: .3s;
+    color: var(--cor04);
+}
+#logo-home span{
+    font-size: 2em;
+}
+
+/*Botões das telas do Home*/
+#home{
+    margin: 50px auto;
+    max-width: 800px;
+}
+.item{
+    text-align: center;
+    width: 20%;
+    float: left;
+    margin: 0px 35px;
+
+}
+.item button{
+    transition: background .4s, color .2s, border-radius .4s;
+    border-radius: 0px;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    color: var(--cor01);
+}
+.item button:hover{
+    transition-duration: .3s;
+    border-radius: 80px;
+    background: var(--cor01);
+    box-shadow: 0px 0px 10px var(--cor03);
+    color: #fff;
+}
+.item span{
+    font-size: 2em;
+}

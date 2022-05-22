@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@media only screen and (max-width: 500px) {
+    .menuBT{
+        display: none;
+    }
+    .mobile{
+        display: block !important;
+    }
+    h1{
+        font-size: 1.6em !important;
+    }
+}
+
+:root{ /*variaveis*/
+    --cor01: #D5EAF2;
+    --cor02: #77A0F2;
+    --cor03: #6393F2;
+    --cor04: #F2D541;
+    --cor05: #bba535;
+}
+*{ /*tira todos os padding e margin p configurar manualmente*/
+    padding: 0%;
+    margin: 0%;
+}
+body{ /*corpo*/
+    background-color: var(--cor01);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+.tela, .mobile{ /*desativa todas as telas */
+    display: none;
+}
+
+
+/*HEADER*/
+
+.menu{ /*menu do topo, com logo e botoes*/
+    background-image: linear-gradient(to right, var(--cor03), var(--cor04));
+    height: 80px;
+    box-shadow: 0px 1px 5px #00000067
+}
+.logo{ /*logo do menu, fica alinhada e redimensionada a esquerda*/
+    height: 100%;
+    width: 80px;
+    float: left;
+}
+.logo img{
+    width: 70px;
+    padding: 5px;
+}
+.menuBT{ /*div p agrupar os botoes do menu*/
+    height: 100%;
+    float: left;
+    margin-left: 25px;
+}
+.menu .botao{ /*botoes do menu e suas estilizaçoes*/
+    transition-duration: .3s;
+    margin: 20px 5px;
+    padding: 10px;
+    border: none;
+    font-size: 1em;
+    font-weight: 550;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+}
+.menu .botao:hover{
+    transition-duration: .3s;
+    color: var(--cor05);
+}
+.mobile{
+    float: right;
+    height: 100%;
+    padding-top: 25px;
+    padding-right: 10px;
+}
+.mobile select{
+    padding: 3px;
+    border-radius: 2px;
+    background: linear-gradient(45deg, var(--cor01), var(--cor02));
+    border: none;
+}
+
+/*MAIN*/
+
+main{ /*leve espaço no conteudo principal*/
+    padding: 10px;
+}
+table{
+    box-shadow: 0px 0px 7px #00000062;
+    transition-duration: .2s;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #ffffff91;
+}
+table tr td{
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: var(--cor05);
+    padding: 5px 0;
+}
+
+table tbody tr:hover {
+    transition-duration: .2s;
+    background: var(--cor01);
+}
+.alinhar{ /*div que alinha o titulo e a tabela*/
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 5px;
+}
+main h1{ /*titulo*/
+    font-size: 2.3em;
+    padding: 5px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+main h2{ /*subtitulo*/
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 450;
+}
+.cadastrar{ /*div do botao de cadastrar*/
+    max-width: 90px;
+    padding: 10px;
+    float: right;
+}
+.cadastrar button{ /*botao de cadastrar*/
+    transition-duration: .2s;
+    width: 50px;
+    padding: 7px;
+    background-color: var(--cor02);
+    border: none;
+    border-radius: 5px;
+}
+.cadastrar button:hover{
+    transition-duration: .2s;
+    background-color: var(--cor03);
+}
+.cadastrar img{ /*icone no botao*/
+    width: 20px;
+}
+
+.organizar{ /*espaçamento entre divs*/
+    margin-top: 15px;
+    text-align: center;
+}
+
+.inputField{
+    padding: 4px;
+    width: 220px;
+    border-radius: 5px;
+    border: 2px solid var(--cor05);
+}
+.BTcadastro{
+    transition-duration: .3s;
+    margin-top: 15px;
+    width: 100px;
+    padding: 5px;
+    background-color: var(--cor04);
+    border: none;
+    border-radius: 5px;
+}
+.BTcadastro:hover{
+    transition-duration: .3s;
+    background-color: var(--cor05);
+}

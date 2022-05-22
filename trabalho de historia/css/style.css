@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media only screen and (max-width: 1125px) {
+    aside{
+        max-width: 350px;
+        margin: 20px auto;
+    }
+}
+@media only screen and (min-width: 1125px) {
+    aside{ /*itens das teorias*/
+        max-width: 25%;
+        display: inline-block;
+        margin: 25px;
+    }
+}
+
+:root{/*variáveis*/
+    /*
+    verde
+    --cor01:#5DF580;
+    --cor02:#45B55F;
+    --cor03:#41A959;
+    --cor04:#368F4B;
+    --cor05:#286937;
+    */
+    
+    --cor01:#63F2F2;
+    --cor02:#49B3B3;
+    --cor03:#45A7A7;
+    --cor04:#3A8C8C;
+    --cor05:#2A6666;
+    
+    /*
+    laranja
+    --cor01:#F5E095;
+    --cor02:#B5A66E;
+    --cor03:#A89A66;
+    --cor04:#8F8357;
+    --cor05:#696040;
+    */  
+}
+*{ /*global*/
+    background-attachment: fixed;
+    margin: 0;
+}
+
+body{ /*corpo*/
+    font-family: 'Lato', Helvetica, sans-serif;
+    background: linear-gradient(45deg, var(--cor01), transparent);
+}
+header{/*cabeçalho*/
+    background: linear-gradient(to top, var(--cor05), var(--cor04));
+    height: 100px;
+    box-shadow: 0px 0px 8px #00000083;
+}
+
+#cabecalho p{
+    margin: 0%;
+    padding: 5px;
+}
+
+#logo{/*logo*/
+    height: 100%;
+    float: left;
+    width: 100px;
+}
+#logo img{
+    width: 90px;
+    padding: 3px;
+    box-shadow: none;
+}
+
+main{ /*principal*/
+    padding: 20px;
+    max-width: 915px;
+    margin: auto;
+    background: #fff;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 8px #0000003f;
+}
+
+p{ /*paragrafo*/
+    text-indent: 10px;
+    line-height: 1.6em;
+    margin-top: 15px;
+    font-size: 1.2em;
+    text-shadow: 0px 1px 5px #00000028;
+}
+strong{
+    color: var(--cor05);
+    
+}
+h1{ /*titulo*/
+    font-family: 'Playfair Display', Arial;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 25px;
+    text-shadow: 0px 1px 5px #00000042;
+}
+main h2{
+    font-family: 'Playfair Display', Arial;
+    margin-top: 25px;
+    font-size: 2em;
+}
+img{ /*imagens*/
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #00000083;
+    width: 100%;
+}
+img.pequeno{
+    max-width: 350px;
+    width: 100%;
+}
+.img{
+    margin-top: 25px;
+}
+aside{ /*itens das teorias*/
+    background: var(--cor04);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #00000083;
+}
+aside div{ /*imagens das teorias*/
+    margin: auto;
+    width: 200px;
+}
+aside img{
+    width: 100%;
+}
+aside p{
+    font-size: 1em;
+    padding: 3px;
+}
+aside h2{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+footer{/*rodapé*/
+    background: linear-gradient(to right, var(--cor05), var(--cor04));
+    box-shadow: 0px 0px 8px #0000003f;
+    margin-top: 30px;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+}

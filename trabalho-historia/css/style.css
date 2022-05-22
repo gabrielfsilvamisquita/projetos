@@ -15,7 +15,7 @@
         max-width: 25%;
         display: inline-block;
         margin: 25px;
-    }
+    } 
 }
 
 :root{/*variáveis*/
@@ -57,6 +57,7 @@ header{/*cabeçalho*/
     height: 120px;
     box-shadow: 0px 0px 8px #00000083;
 }
+
 #qrcode{
     height: 100%;
     float: right;
@@ -159,4 +160,7 @@ footer p{
     color: #fff;
     text-align: center;
     padding: 2px;
+}
+footer a{
+    color: #fff;
 }

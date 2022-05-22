@@ -1,2 +1,2 @@
 # projetos
- Projetos sérios de Web Sites
+ Meus Projetos de Web Sites para estudo :)

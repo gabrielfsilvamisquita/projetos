@@ -1,9 +1,55 @@
+/*Configuração Mobile, telas pequenas*/
+@media only screen and (max-width: 525px) { 
+    .item{
+        width: 15% !important;
+    }
+    .item button{
+        padding: 15px;
+        height: 60px;
+        width: 60px;
+        border-radius: 80px;
+        background: var(--cor01);
+        box-shadow: 0px 0px 10px var(--cor03);
+        color: #fff;
+    }
+    .titulo button{
+        color:#fff;
+    }
+}
+/*Configuração para telas grandes*/
+@media only screen and (min-width: 525px){ 
+    .item{
+        width: 20% !important;
+    }
+    .item button{
+        transition: background .4s, color .2s, border-radius .4s;
+        border-radius: 0px;
+        padding: 20px;
+        height: 80px;
+        width: 80px;
+        color: var(--cor01);
+    }
+    .item button:hover{
+        transition-duration: .3s;
+        border-radius: 80px;
+        background: var(--cor01);
+        box-shadow: 0px 0px 10px var(--cor03);
+        color: #fff;
+    }
+}
 :root{
     --cor01:#4A678F;
     --cor02:#d4e5fd;
     --cor03:#88AADB;
     --cor04:#8F733C;
     --cor05:#DBBF88;
+}
+/*Esconder todas as telas e mostrar apenas a de Home*/
+.tela{
+    display: none;
+}
+#home{
+    display: block;
 }
 
 body{ /*Corpo*/
@@ -49,26 +95,34 @@ button{ /*Botões*/
 }
 .item{
     text-align: center;
-    width: 20%;
     float: left;
     margin: 0px 35px;
-
-}
-.item button{
-    transition: background .4s, color .2s, border-radius .4s;
-    border-radius: 0px;
-    padding: 20px;
-    height: 80px;
-    width: 80px;
-    color: var(--cor01);
-}
-.item button:hover{
-    transition-duration: .3s;
-    border-radius: 80px;
-    background: var(--cor01);
-    box-shadow: 0px 0px 10px var(--cor03);
-    color: #fff;
 }
 .item span{
     font-size: 2em;
+}
+
+/*Título com botão ao lado*/
+.titulo{
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+}
+.titulo h1{
+    display: inline-block
+}
+.titulo button{  
+    transition-duration: .5s;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 3px;
+    width: 30px;
+    background: var(--cor01);
+    transform: skewY(7deg);
+}
+.titulo button:hover{
+    transition-duration: .5s;
+    transform: skewY(0deg);
+    border-radius: 5px;
+    color: #fff;
 }

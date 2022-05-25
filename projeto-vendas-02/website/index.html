@@ -13,28 +13,37 @@
     <!--Cabeçalho-->
     <header>
         <div id="logo-home">
-           <button class="botao"><span class="fa fa-home"></span></button>
+           <button tela="home" class="botao"><span class="fa fa-home"></span></button>
         </div>
     </header>
     <!--Conteúdo Principal-->
     <main>
 
         <!--Tela de Home-->
-        <div id="home">
+        <div class="tela" id="home">
             <nav>
                 <!--Botão de Clientes-->
                 <div class="item">
-                    <button class="botao"><span class="fa fa-user"></span></button>
+                    <button tela="clientes" class="botao"><span class="fa fa-user"></span></button>
                 </div>
                 <!--Botão de Produtos-->
                 <div class="item">
-                    <button class="botao"><span class="fa fa-shopping-bag"></span></button>
+                    <button tela="produtos" class="botao"><span class="fa fa-shopping-bag"></span></button>
                 </div>
                 <!--Botão de Vendas-->
                 <div class="item">
-                    <button class="botao"><span class="fa fa-shopping-cart"></span></button>
+                    <button tela="vendas" class="botao"><span class="fa fa-shopping-cart"></span></button>
                 </div>
             </nav>
+        </div>
+
+        <!--Tela de Clientes-->
+        <div class="tela" id="clientes">
+            <!--Título com botão de Cadastro-->
+            <div class="titulo">
+                <h1>Clientes Cadastrados</h1>
+                <button tela="cadCliente" class="botao"><span class="fa fa-plus"></span></button>
+            </div>
         </div>
 
     </main>

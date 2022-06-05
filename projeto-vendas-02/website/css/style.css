@@ -126,3 +126,13 @@ button{ /*Botões*/
     border-radius: 5px;
     color: #fff;
 }
+
+/*Inputs do Cadastrar alinhados*/
+.alinhar{
+    max-width: 500px;
+    text-align: center;
+    margin: 20px auto;
+}
+.organizar{
+   margin-bottom: 15px;
+}

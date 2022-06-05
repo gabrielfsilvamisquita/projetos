@@ -1,3 +1,19 @@
+<?php
+
+/*
+    session_start();
+
+    if(!$_SESSION['login']) {
+
+        header("Location: login.html");
+        exit;
+
+    }
+
+  */  
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,7 +34,7 @@
             <button class="botao" tela="home">Home</button>
             <button class="botao" tela="clientes">Clientes</button>
             <button class="botao" tela="produtos">Produtos</button>
-            <button class="botao" tela="vendas">Vendas</button>
+            <button class="botao" tela="vendas">Vendas</button>         
         </nav>
         <nav class="mobile">
             <select id="menuBTmobile">
@@ -33,7 +49,19 @@
     <main>
         <!--Tela principal-->
         <div class="tela" id="home">
-
+            <h1>Cadastrar</h1>
+            <div class="organizar">
+                <input id="nomeUsuario" placeholder="Nome..." class="inputField" type="text">
+            </div>
+            <div class="organizar">
+                <input id="senhaUsuario" placeholder="Senha..." class="inputField" type="password">
+            </div>
+            <div class="organizar">
+                <input id="CsenhaUsuario" placeholder="Confirmar senha..." class="inputField" type="password">
+            </div>
+            <div class="organizar">
+                <button class="BTcadastro" id="BTusuario">Enviar</button>
+            </div>
         </div>
 
         <!--Tela de clientes-->

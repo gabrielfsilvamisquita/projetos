@@ -37,12 +37,50 @@
             </nav>
         </div>
 
-        <!--Tela de Clientes-->
-        <div class="tela" id="clientes">
+        <!--Tela de Produtos-->
+        <div class="tela" id="produtos">
             <!--Título com botão de Cadastro-->
             <div class="titulo">
-                <h1>Clientes Cadastrados</h1>
-                <button tela="cadCliente" class="botao"><span class="fa fa-plus"></span></button>
+                <h1>Produtos Cadastrados</h1>
+                <button tela="cadProduto" class="botao"><span class="fa fa-plus"></span></button>
+            </div>
+        </div>
+
+        <!--Tela de Cadastrar Produtos-->
+        <div class="tela" id="cadProduto">
+            <div class="titulo">
+                <h1>Cadastrar Produto</h1>
+            </div>
+            <!--Inputs-->
+            <div class="alinhar">
+                <!--Nome do Produto-->
+                <div class="organizar">
+                    <input type="text" placeholder="Nome" id="nomeProduto">
+                </div>
+                <!--Preço de Custo-->
+                <div class="organizar">
+                    <input type="number" placeholder="Preço de Custo" id="precoCusto">
+                </div>
+                <!--Preço de Venda-->
+                <div class="organizar">
+                    <input type="number" placeholder="Preço de Venda" id="precoVenda">
+                </div>
+                <!--Unidade do Produto-->
+                <div class="organizar">
+                    <select id="unidade">
+                        <option value="unidade">UN</option>
+                        <option value="quilograma">KG</option>
+                        <option value="litro">LT</option>
+                        <option value="metro">MT</option>
+                    </select>
+                </div>
+                <!--Porcentagem de Lucro-->
+                <div class="organizar">
+                    <span id="lucroProduto">1234</span>
+                </div>
+                <div class="organizar">
+                    <button class="botaoCadastro"><span class="fa fa-send"></span></button>
+                </div>
             </div>
         </div>
 

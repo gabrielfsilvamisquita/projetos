@@ -254,6 +254,19 @@ $(function(){
        $("#"+tela).show(); //mostrar tela
 
     });
+    $("#BTusuario").click(function(){
+        let dados = {
+            "nome": $("#nomeUsuario").val(),
+            "senha": $("#senhaUsuario").val(),
+            "confirmarSenha": $("#CsenhaUsuario").val()
+        }
+        if(dados.senha != dados.confirmarSenha){
+            return false;
+        }
+        $.post("backend/cadUsuario.php", dados, function(retorno){
+            console.log(retorno);
+        });
+    });
   
     
 });

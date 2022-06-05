@@ -147,4 +147,19 @@
             return mysqli_real_escape_string($this->conn, $campo); //limpar campo
         }
     }
+    class Usuario{
+
+        private $conn;
+
+        function __construct($conn){ //metodo construtor
+            $this->conn = $conn;
+        }
+        function Verificar($usuario){
+            $let = $this->conn->query("SELECT id FROM usuarios WHERE nome='$usuario'");
+            return $let->num_rows;
+        }
+        function Cadastrar($dados){
+            $this->conn->query("INSERT INTO usuarios(nome, senha) VALUES('$dados[nome]','$dados[senha]')");
+        }
+    }
 ?>
